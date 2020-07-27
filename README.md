@@ -26,9 +26,9 @@ Below is Full Schematic
 ![](docs/schematics.jpeg)
 ![](docs/schematics_notes_indo.jpeg)
 
-### Use Programatically:
+### Program it!:
 
-1. Create credentials.h, save within the same folder. credentials.h consists of:
+1. Create **credentials.h**, save within the same folder. **credentials.h** copy this inside, and change the number inside `dest_phone_no[16]`:
 ```
 char dest_phone_no[16] = "+YYXXXXXXXXXXX";
 
@@ -41,7 +41,7 @@ char dest_phone_no[16] = "+YYXXXXXXXXXXX";
 4. Choose proper Serial COM
 4. Build, Upload
 
-### Use Through Serial Monitor:
+### (Optional) Use SIM800 Through Serial Monitor:
 
 1. Open PuTTY (or any kind of serial monitor)
 2. Choose Category Session
@@ -51,7 +51,7 @@ char dest_phone_no[16] = "+YYXXXXXXXXXXX";
 6. Click Open
 7. Once opened, try these test codes one-by-one
 - `AT` --> Will respond `OK`
-- `AT+CSQ` --> Will respond `+CSQ: 19,0`, whereas 19 is the network signal strengh in dBm
+- `AT+CSQ` --> Will respond `+CSQ: 19,0`, whereas 19 is the network signal strengh in dBm (may differ)
 
 ---
 
@@ -64,6 +64,6 @@ https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
 
 ### a note from Royyan
 
-Use this as you wish! Happy making! :octocat:
-
 a :droplet: Aquifera Project
+
+Use this as you wish! Happy making! :octocat:
