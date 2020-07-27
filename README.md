@@ -1,4 +1,4 @@
-# GSM Send-Recieve SMS Messages
+# GSM Send-Recieve SMS Messages :mailbox_with_mail:
 
 This project can be used to send sms messages with the SIM800L V2 module (not the SIM800L V1, nor any other type of module guaranteed to succeed).
 
@@ -66,4 +66,4 @@ https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
 
 Use this as you wish! Happy making! :octocat:
 
-an :droplet: Aquifera Project
+a :droplet: Aquifera Project
