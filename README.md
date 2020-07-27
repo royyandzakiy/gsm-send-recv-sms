@@ -5,7 +5,7 @@ This project can be used to send sms messages with the SIM800L V2 module (not th
 ## How To:
 ### Preparation:
 
-- Install Arduino IDE, or any IDE that can compile with the Arduino Framework
+- Install [Arduino IDE](https://www.arduino.cc/en/main/software), or any IDE that can compile with the Arduino Framework
 
 ### SIM800L V2 Wiring/Cabling (Follow the schematic):
 - Connect SIM800 GND PIN with power source 
@@ -29,7 +29,7 @@ Below is Full Schematic
 ### Program it!:
 
 1. Create **credentials.h**, save within the same folder. **credentials.h** copy this inside, and change the number inside `dest_phone_no[16]`:
-```
+```cpp
 char dest_phone_no[16] = "+YYXXXXXXXXXXX";
 
 // Change YY with country code, change XXX with phone number
