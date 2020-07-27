@@ -10,7 +10,7 @@
 //Create software serial object to communicate with SIM800L
 SoftwareSerial simSerial(SIM800_TX_PIN, SIM800_RX_PIN); //SIM800L Tx & Rx is connected to Arduino #3 & #2
 
-char msg[150] = "Mantap broq 3";
+char msg[150] = "Pesan terkirim!";
 
 void sendSMS();
 void initialize();
@@ -71,7 +71,7 @@ void sendSMS() {
   simSerial.println("AT+CNMI=1,2,0,0,0"); // Decides how newly arrived SMS messages should be handled
   updateSerial();
   simSerial.print("AT+CMGS=\"");
-  simSerial.print(no_hp_tujuan);
+  simSerial.print(dest_phone_no);
   simSerial.println("\"");
   updateSerial();
   simSerial.print(msg); //text content
